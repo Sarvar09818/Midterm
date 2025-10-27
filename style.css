@@ -1,0 +1,166 @@
+/* ==============================
+   Engineering College - Dark Minimal Theme
+   Author: Sarvar
+   ============================== */
+
+body {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= Navbar ======= */
+.navbar {
+  background-color: #2b2b2b !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #cfcfcf !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* ======= Hero Section ======= */
+.hero {
+  background: linear-gradient(to right, #2a2a2a, #1f1f1f);
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #c8c8c8;
+  font-size: 1.1rem;
+}
+
+.hero .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* ======= Sections ======= */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 10px;
+  color: #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.card-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ======= Forms ======= */
+form {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.form-label {
+  color: #cccccc;
+}
+
+.form-control,
+.form-select {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* ======= Footer ======= */
+footer {
+  background-color: #2b2b2b;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* ======= Utility Classes ======= */
+.text-muted-light {
+  color: #b5b5b5 !important;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero {
+    padding: 80px 15px;
+  }
+}
