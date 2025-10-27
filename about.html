@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Engineering College — О колледже и программы</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" aria-label="Главная навигация">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="./image/Gemini_Generated_Image_wkjb1wkjb1wkjb1w.png" alt="Логотип" width="36" height="36" class="me-2">
+          <span class="fw-bold">Engineering College</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">О колледже / Программы</a></li>
+            <li class="nav-item"><a class="nav-link" href="admissions.html">Поступление</a></li>
+            <li class="nav-item"><a class="nav-link" href="student-life.html">Студенческая жизнь</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+            <li class="nav-item"><a class="btn btn-outline-light ms-md-3" href="registration.html">Регистрация</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="height:64px" aria-hidden="true"></div>
+  </header>
+
+  <main class="container section">
+    <h1>О Engineering College</h1>
+    <p class="lead">Engineering College — место, где теория встречается с практикой. Наша миссия — готовить инженерные кадры с навыками, востребованными сегодня и завтра.</p>
+
+    <section class="mt-4">
+      <h2 id="programs">Программы обучения</h2>
+      <p>Выберите категорию, чтобы отфильтровать программы:</p>
+
+      <div class="row g-3 align-items-center mb-3">
+        <div class="col-sm-6 col-md-4">
+          <label for="programFilter" class="form-label visually-hidden">Фильтр программ</label>
+          <select id="programFilter" class="form-select" aria-label="Фильтр программ">
+            <option value="">Показать все</option>
+            <option value="mechanical">Механическая</option>
+            <option value="electrical">Электротехника</option>
+            <option value="cs">Компьютерная</option>
+            <option value="civil">Гражданская</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="program-grid">
+        <article class="card program-card" data-category="mechanical">
+          <div class="card-body">
+            <h3 id="mechanical" class="card-title h5">Механическая инженерия</h3>
+            <p>Фокус на машиностроение, CAD, производство и испытания материалов.</p>
+            <ul>
+              <li>Длительность: 4 года</li>
+              <li>Диплом бакалавра</li>
+            </ul>
+            <a href="admissions.html" class="link-primary">Как поступить</a>
+          </div>
+        </article>
+
+        <article class="card program-card" data-category="electrical">
+          <div class="card-body">
+            <h3 id="electrical" class="card-title h5">Электротехника</h3>
+            <p>Энергетические системы, электроника и системная интеграция.</p>
+            <ul>
+              <li>Длительность: 4 года</li>
+              <li>Сильный практический компонент</li>
+            </ul>
+            <a href="admissions.html" class="link-primary">Как поступить</a>
+          </div>
+        </article>
+
+        <article class="card program-card" data-category="cs">
+          <div class="card-body">
+            <h3 id="cs" class="card-title h5">Компьютерная инженерия</h3>
+            <p>Программирование встроенных систем, нейросети, сети и кибербезопасность.</p>
+            <ul>
+              <li>Длительность: 4 года</li>
+              <li>Практика с реальными проектами</li>
+            </ul>
+            <a href="admissions.html" class="link-primary">Как поступить</a>
+          </div>
+        </article>
+
+        <article class="card program-card" data-category="civil">
+          <div class="card-body">
+            <h3 id="civil" class="card-title h5">Гражданское строительство</h3>
+            <p>Проектирование зданий и инфраструктуры с опорой на современные материалы и устойчивость.</p>
+            <ul>
+              <li>Длительность: 4 года</li>
+              <li>Проекты совместно с отраслью</li>
+            </ul>
+            <a href="admissions.html" class="link-primary">Как поступить</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2>Почему выбирают нас</h2>
+      <ul>
+        <li>Индустриальные партнёры и стажировки</li>
+        <li>Современное оборудование</li>
+        <li>Поддержка карьерного роста</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">© Engineering College — 2025.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="contact.html" class="text-white">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
